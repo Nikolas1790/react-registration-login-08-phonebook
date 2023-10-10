@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-export const RegisterForm = styled.form`
+export const RegisterFormForm = styled.form`
 width: 320px;
 `
 
-export const RegisterLabel = styled.label`
+export const RegisterFormLabel = styled.label`
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;

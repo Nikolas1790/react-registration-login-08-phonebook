@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { selectItems} from "redux/selectors";
+import { selectItems} from "redux/contacts/selectors";
 import { ButtonAddContact, FormTable, InputInfToAdd, Label } from "components/App.styled";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer} from "react-toastify"; 
 import {  toast } from "react-toastify"; 
-import { addContact } from "redux/operations";
+import { addContact } from "redux/contacts/operations";
 
 export const ContactForm = () => {
   const [name, setName] = useState('')
