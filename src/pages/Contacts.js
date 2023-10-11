@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // import { TaskList } from 'components/TaskList/TaskList';
 // import { TaskEditor } from 'components/TaskEditor/TaskEditor';
 // import { fetchTasks } from '../redux/tasks/operetions';
-import { selectLoading } from 'redux/tasks/selectors';
+// import { selectLoading } from 'redux/tasks/selectors';
 import { FormContacts, WraperDiv } from 'components/App.styled';
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
