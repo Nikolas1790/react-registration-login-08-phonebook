@@ -12,10 +12,13 @@ export const Navigation = () => {
         Home
       </NavigationNavLink>
       {isLoggedIn && (
-        <NavigationNavLink  to="/tasks">
-          Tasks
+        <NavigationNavLink  to="/contacts">
+         Contacts
         </NavigationNavLink>
       )}
     </nav>
   );
 };
+{/* <NavigationNavLink  to="/contacts">
+Contacts
+</NavigationNavLink> */}

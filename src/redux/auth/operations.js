@@ -29,7 +29,6 @@ export const register = createAsyncThunk(
       // After successful registration, add the token to the HTTP header
       
       setAuthHeader(res.data.token);
-      // console.log(res.data)
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
