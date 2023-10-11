@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import { TaskList } from 'components/TaskList/TaskList';
 import { TaskEditor } from 'components/TaskEditor/TaskEditor';
 import { fetchTasks } from '../redux/tasks/operetions';
@@ -16,9 +16,9 @@ export default function Tasks() {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet> */}
         <title>Your tasks</title>
-      </Helmet>
+      {/* </Helmet> */}
       <TaskEditor />
       <div>{isLoading && 'Request in progress...'}</div>
       <TaskList />
