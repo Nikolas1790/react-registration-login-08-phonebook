@@ -8,6 +8,7 @@ export const RegisterForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    // console.log(e.currentTarget.elements.name.value)
     const form = e.currentTarget;
     dispatch(
       register({
