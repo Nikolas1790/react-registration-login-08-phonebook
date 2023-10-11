@@ -8,8 +8,6 @@ import {  toast } from "react-toastify";
 export const ContactList =() => {
 
   const dispatch = useDispatch()
-  // const itemValue = useSelector(selectItems)
-  // const filterValue = useSelector(selectFilter)
 
   const visibleContacts = useSelector(selectVisibleContacts)
 
@@ -24,8 +22,6 @@ export const ContactList =() => {
     toast.warn(`${name} removed from contacts 🙈`); 
     dispatch(deleteContact(id))
   }
-  // const getVisibleItems =  itemValue.filter(contact => contact.name.toLowerCase().includes(filterValue.toLowerCase()))
-  
   return(
     <div>      
         <ItemsContracts>               
