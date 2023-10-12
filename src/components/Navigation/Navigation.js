@@ -7,11 +7,11 @@ export const Navigation = () => {
   return (
     <nav>
       <NavigationNavLink  to="/">
-      🏡 Home
+       Home
       </NavigationNavLink>
       {isLoggedIn && (
         <NavigationNavLink  to="/contacts">
-        📖 Contacts
+         Contacts
         </NavigationNavLink>
       )}
     </nav>

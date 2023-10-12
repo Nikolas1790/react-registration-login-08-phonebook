@@ -4,10 +4,10 @@ export const AuthNav = () => {
   return (
     <div>
       <DecorationNavLink  to="/register">
-      ✏️ Register
+       Register
       </DecorationNavLink>
       <DecorationNavLink  to="/login">
-      ☕️ Log In
+      Log In
       </DecorationNavLink>
     </div>
   );

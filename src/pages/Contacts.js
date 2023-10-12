@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { FormContacts, WraperDiv } from 'components/App.styled';
+import { FormContacts, GradientSubTitleContacts, GradientTextPhone, WraperDiv } from 'components/App.styled';
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
 import { ContactList } from 'components/ContactList/ContactList';
@@ -15,38 +15,16 @@ export default function Tasks() {
     dispatch(fetchContacts());
   }, [dispatch]);
 
-  return (
-    <>
+  return (  
     <WraperDiv>
     <div>{isLoading && 'Request in progress...'}</div>
-        <h1>Phonebook</h1>
+        <GradientTextPhone>Phonebook</GradientTextPhone>
         <ContactForm /> 
-        <h2>Contacts</h2>
+        <GradientSubTitleContacts>Contacts</GradientSubTitleContacts>
         <FormContacts>
             <Filter  />  
             <ContactList />
         </FormContacts>
-    </WraperDiv>
-    </>
+    </WraperDiv>    
   );
 }
-
-
-// import { ContactForm } from "./ContactForm/ContactForm"
-// import { ContactList } from "./ContactList/ContactList"
-// import { Filter } from "./Filter/Filter"
-// import {FormContacts, WraperDiv } from "./App.styled"
-
-// export const App = () =>{
-// return (
-    // <WraperDiv>
-    //     <h1>Phonebook</h1>
-    //     <ContactForm /> 
-    //     <h2>Contacts</h2>
-    //     <FormContacts>
-    //         <Filter  />  
-    //         <ContactList />
-    //     </FormContacts>
-    // </WraperDiv>
-// )
-// }

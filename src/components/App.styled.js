@@ -1,4 +1,16 @@
-import styled from 'styled-components'
+import { NavLink } from 'react-router-dom';
+import styled, { keyframes } from 'styled-components'
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 export const FormTable = styled.form`
 display: flex;
@@ -6,10 +18,10 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
      
-border: 1.5px solid rgb(171, 163, 163);
+/* border: 1.5px solid rgb(171, 163, 163); */
 width: 400px;
 padding: 8px;
-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+/* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); */
 `
 
 export const ButtonAddContact = styled.button`
@@ -92,10 +104,21 @@ font-weight: 500;
 `
 
 export const WraperDiv = styled.div`
-display: flex;
+/* display: flex;
 align-items: center;
 justify-content: center;
-flex-direction: column;
+flex-direction: column; */
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
 
 `
 
@@ -106,8 +129,63 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
      
-border: 1.5px solid rgb(171, 163, 163);
-width: 400px;
-padding: 8px;
-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+/* border: 1.5px solid rgb(171, 163, 163); */
+/* width: 400px; */
+/* padding: 8px; */
+/* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); */
+`
+
+
+export const GradientTextPhone = styled.h1`
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Черный цвет */
+  font-family: 'YourDesiredFont', sans-serif;
+  /* Замените 'YourDesiredFont' на имя красивого шрифта, который вы хотите использовать */
+`;
+
+export const GradientSubTitleContacts = styled.h2`
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333; /* Черный цвет */
+  font-family: 'YourDesiredFont', sans-serif;
+  /* Замените 'YourDesiredFont' на имя красивого шрифта, который вы хотите использовать */
+`;
+
+// ////////////////////home page/////////////////////
+
+
+export const LogInHomePage = styled(NavLink)`
+  margin-top: 25px;
+  padding: 10px 20px;
+  /* border: 0px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff4500;
+  box-shadow: gray;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  background-color: #007BFF;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  
+  animation: ${pulse} 2s infinite;
+
+  &:hover {
+    background-color: #0056b3;
+    animation: none;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
 `
