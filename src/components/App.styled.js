@@ -83,7 +83,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 `
 export const ButtonDel = styled.button`
-font-weight: 700;
+/* font-weight: 700;
 border-radius: 4px;
 
 cursor: pointer;
@@ -96,6 +96,31 @@ transition: box-shadow 250ms linear;
         
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     
+  } */
+  color: black;
+  margin-right: 0;
+  margin-left: auto;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+
+  transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear; 
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgb(255, 255, 255);
+    background-color: red;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
   }
 `
 export const FindContact = styled.p`
@@ -114,10 +139,10 @@ display: flex;
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+  background-color: rgba(249, 249, 249, 0.8);
 
 
 `
@@ -170,18 +195,18 @@ export const LogInHomePage = styled(NavLink)`
   text-decoration: none;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
-  
+
+  transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear; 
   animation: ${pulse} 2s infinite;
 
   &:hover {
     background-color: #0056b3;
     animation: none;
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
   }
 
   &:active {
@@ -189,3 +214,15 @@ export const LogInHomePage = styled(NavLink)`
   }
 
 `
+
+// layout////////////////////////
+export const Container = styled.div`
+ max-width: 960px;
+  margin: 0 auto;
+   padding: 0 16px;
+   display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  justify-content: space-between;
+
+`;

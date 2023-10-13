@@ -1,9 +1,9 @@
 import { LogInHomePage } from "components/App.styled";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const styles = {
     container: {
-      minHeight: 'calc(100vh - 50px)',
+      // minHeight: 'calc(100vh - 50px)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',

@@ -25,6 +25,8 @@ border-radius: 3px;
 font-size: 16px;
 margin-top: 5px;
 `;
+
+
 const pulse = keyframes`
   0% {
     transform: scale(1);
@@ -51,7 +53,7 @@ export const SubmitButton = styled.button`
     background-color: #0056b3;
     animation: none;
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
   }
 
   &:active {

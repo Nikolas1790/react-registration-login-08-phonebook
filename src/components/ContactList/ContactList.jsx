@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact, fetchContacts } from "redux/contacts/operations";
 import { selectIsLoading, selectError, selectVisibleContacts } from "redux/contacts/selectors";
 import {  toast } from "react-toastify"; 
+// import { FiLogOut } from 'react-icons/io5';
+import { MdDeleteOutline } from 'react-icons/md';
+
 
 export const ContactList =() => {
 
@@ -28,7 +31,8 @@ export const ContactList =() => {
           {!isLoading && visibleContacts.map(({id, name, number}) =>(
             <ItemContact key={id}>{name}: {number}
             <ButtonDel onClick={() => onDeleteContact(id,name)}> 
-              Delete</ButtonDel>
+              <MdDeleteOutline/>
+               </ButtonDel>
             </ItemContact>
          ) )}
         </ItemsContracts>

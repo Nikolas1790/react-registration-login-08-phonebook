@@ -8,8 +8,15 @@ export const NavigationNavLink = styled(NavLink)`
   padding: 12px;
   font-weight: 700;
   color: #2a363b;  
-    &:active {
-        color: #e84a5f;        
-    }
-
+  &:hover,
+  &:focus {
+    color:  rgb(95, 230, 243);
+    transform: scale(1.1);
+    
+  }
+  &.active {
+    color:  rgb(95, 230, 243); /* Цвет для активных ссылок */
+    font-weight: bold; /* Жирный шрифт для активных ссылок */
+    /* Дополнительные стили для активных ссылок */
+  }
 `
