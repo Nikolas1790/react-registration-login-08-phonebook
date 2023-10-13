@@ -1,22 +1,18 @@
 import styled, { keyframes } from 'styled-components'
 
 export const RegisterFormForm = styled.form`
-/* width: 320px; */
 display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 300px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: rgba(249, 249, 249, 0.8);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `
 
 export const RegisterFormLabel = styled.label`
-  /* display: flex;
-  flex-direction: column;
-  margin-bottom: 16px; */
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;

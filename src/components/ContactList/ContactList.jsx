@@ -3,8 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact, fetchContacts } from "redux/contacts/operations";
 import { selectIsLoading, selectError, selectVisibleContacts } from "redux/contacts/selectors";
-import {  toast } from "react-toastify"; 
-// import { FiLogOut } from 'react-icons/io5';
+import {  toast } from "react-toastify";
 import { MdDeleteOutline } from 'react-icons/md';
 
 

@@ -15,8 +15,7 @@ export const NavigationNavLink = styled(NavLink)`
     
   }
   &.active {
-    color:  rgb(95, 230, 243); /* Цвет для активных ссылок */
-    font-weight: bold; /* Жирный шрифт для активных ссылок */
-    /* Дополнительные стили для активных ссылок */
+    color:  rgb(95, 230, 243);
+    font-weight: bold;    
   }
 `

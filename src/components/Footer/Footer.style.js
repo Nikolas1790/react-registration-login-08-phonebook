@@ -13,7 +13,7 @@ export const FooterGit = styled.footer`
 
     &:hover,
     &:focus {
-      color: red;
+      color: blue;
     }
   }
 `;

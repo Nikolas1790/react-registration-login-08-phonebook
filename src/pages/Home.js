@@ -1,5 +1,4 @@
 import { LogInHomePage } from "components/App.styled";
-// import { NavLink } from "react-router-dom";
 
 const styles = {
     container: {

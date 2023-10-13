@@ -18,10 +18,8 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
      
-/* border: 1.5px solid rgb(171, 163, 163); */
 width: 400px;
 padding: 8px;
-/* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); */
 `
 
 export const ButtonAddContact = styled.button`
@@ -83,20 +81,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 `
 export const ButtonDel = styled.button`
-/* font-weight: 700;
-border-radius: 4px;
 
-cursor: pointer;
-
-border: 1.5px solid rgb(171, 163, 163);
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-transition: box-shadow 250ms linear;
-    &:hover {
-        
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
-    
-  } */
   color: black;
   margin-right: 0;
   margin-left: auto;
@@ -129,17 +114,12 @@ font-weight: 500;
 `
 
 export const WraperDiv = styled.div`
-/* display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column; */
 display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
-  /* background-color: #f9f9f9; */
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(249, 249, 249, 0.8);
@@ -153,28 +133,23 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-     
-/* border: 1.5px solid rgb(171, 163, 163); */
-/* width: 400px; */
-/* padding: 8px; */
-/* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); */
 `
 
 
 export const GradientTextPhone = styled.h1`
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333; /* Черный цвет */
+  color: #333; 
   font-family: 'YourDesiredFont', sans-serif;
-  /* Замените 'YourDesiredFont' на имя красивого шрифта, который вы хотите использовать */
+ 
 `;
 
 export const GradientSubTitleContacts = styled.h2`
   font-size: 20px;
   margin-top: 20px;
-  color: #333; /* Черный цвет */
+  color: #333; 
   font-family: 'YourDesiredFont', sans-serif;
-  /* Замените 'YourDesiredFont' на имя красивого шрифта, который вы хотите использовать */
+
 `;
 
 // ////////////////////home page/////////////////////
@@ -183,14 +158,6 @@ export const GradientSubTitleContacts = styled.h2`
 export const LogInHomePage = styled(NavLink)`
   margin-top: 25px;
   padding: 10px 20px;
-  /* border: 0px solid transparent;
-  border-radius: 4px;
-  text-decoration: none;
-  color: white;
-  background-color: #ff4500;
-  box-shadow: gray;
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   background-color: #007BFF;
   text-decoration: none;
   color: #fff;
@@ -226,3 +193,4 @@ export const Container = styled.div`
   justify-content: space-between;
 
 `;
+
