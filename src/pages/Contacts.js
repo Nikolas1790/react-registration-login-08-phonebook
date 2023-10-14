@@ -12,6 +12,7 @@ export default function Tasks() {
   const isLoading = useSelector(selectIsLoading);
 
   useEffect(() => {
+    if(fetchContacts()) return
     dispatch(fetchContacts());
   }, [dispatch]);
 
