@@ -10,3 +10,33 @@ charset = utf-8
 
 [*.md]
 trim_trailing_whitespace = false
+
+
+
+            {waterData.map((waterRecord) => (
+              <TableRow key={waterRecord._id}>
+                <TodayTableData>
+                  <ImageWrapper>
+                    <svg width={26} height={26}>
+                      <use href={`${sprite}#cup`}></use>
+                    </svg>
+                  </ImageWrapper>
+                </TodayTableData>
+                <TextTableData>{waterRecord.waterVolume} ml</TextTableData>
+                <TimeTableData>{waterRecord.date}</TimeTableData>
+                <TodayTableData>
+                  <Button>
+                    <svg width={16} height={16}>
+                      <use href={`${sprite}#pencil-square`}></use>
+                    </svg>
+                  </Button>
+                </TodayTableData>
+                <TodayTableData>
+                  <TrashButton>
+                    <svg width={16} height={16}>
+                      <use href={`${sprite}#trash-can`}></use>
+                    </svg>
+                  </TrashButton>
+                </TodayTableData>
+              </TableRow>
+            ))}
