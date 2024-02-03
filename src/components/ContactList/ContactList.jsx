@@ -33,7 +33,7 @@ export const ContactList =() => {
               <MdDeleteOutline/>
                </ButtonDel>
             </ItemContact>
-         ) )}
+          ) )}
         </ItemsContracts>
         {isLoading && !error && <b>Request in progress...</b>}  
     </div>

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom';
 
-
 export const DecorationNavLink = styled(NavLink)`
   display: inline-block;
   text-decoration: none;
@@ -9,16 +8,13 @@ export const DecorationNavLink = styled(NavLink)`
   font-weight: 700;
   color: #2a363b;   
 
-    &:hover,
+  &:hover,
   &:focus {
     color:  rgb(95, 230, 243);
     scale: 1.1;
   };
   &.active {
     color:  rgb(95, 230, 243);
-    font-weight: bold;
-    
+    font-weight: bold;    
   }
-
-
 `

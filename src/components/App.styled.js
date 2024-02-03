@@ -21,7 +21,6 @@ flex-direction: column;
 width: 400px;
 padding: 8px;
 `
-
 export const ButtonAddContact = styled.button`
 font-weight: 700;
 border-radius: 4px;
@@ -40,11 +39,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
     &:hover {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
-    background:  blue;
-    
+    background:  blue;    
   }
 `
-
 
 export const Label = styled.label`
   display: block;
@@ -81,7 +78,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 `
 export const ButtonDel = styled.button`
-
   color: black;
   margin-right: 0;
   margin-left: auto;
@@ -112,7 +108,6 @@ export const FindContact = styled.p`
 margin: 4px;
 font-weight: 500;
 `
-
 export const WraperDiv = styled.div`
 display: flex;
   flex-direction: column;
@@ -123,25 +118,18 @@ display: flex;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(249, 249, 249, 0.8);
-
-
 `
-
-
 export const FormContacts = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
 `
-
-
 export const GradientTextPhone = styled.h1`
   font-size: 24px;
   margin-bottom: 20px;
   color: #333; 
-  font-family: 'YourDesiredFont', sans-serif;
- 
+  font-family: 'YourDesiredFont', sans-serif; 
 `;
 
 export const GradientSubTitleContacts = styled.h2`
@@ -149,7 +137,6 @@ export const GradientSubTitleContacts = styled.h2`
   margin-top: 20px;
   color: #333; 
   font-family: 'YourDesiredFont', sans-serif;
-
 `;
 
 // ////////////////////home page/////////////////////
@@ -179,18 +166,16 @@ export const LogInHomePage = styled(NavLink)`
   &:active {
     transform: scale(0.95);
   }
-
 `
 
 // layout////////////////////////
 export const Container = styled.div`
- max-width: 960px;
+  max-width: 960px;
   margin: 0 auto;
-   padding: 0 16px;
-   display: flex;
+  padding: 0 16px;
+  display: flex;
   flex-direction: column;
   min-height: 100vh; 
   justify-content: space-between;
-
 `;
 

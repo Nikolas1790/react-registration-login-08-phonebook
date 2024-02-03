@@ -23,8 +23,8 @@ export default function Tasks() {
         <ContactForm /> 
         <GradientSubTitleContacts>Contacts</GradientSubTitleContacts>
         <FormContacts>
-            <Filter  />  
-            <ContactList />
+          <Filter  />  
+          <ContactList />
         </FormContacts>
     </WraperDiv>    
   );
