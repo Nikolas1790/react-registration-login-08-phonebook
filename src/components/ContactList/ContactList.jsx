@@ -26,16 +26,16 @@ export const ContactList =() => {
   }
   return(
     <div>      
-        <ItemsContracts>               
-          {!isLoading && visibleContacts.map(({id, name, number}) =>(
-            <ItemContact key={id}>{name}: {number}
-            <ButtonDel onClick={() => onDeleteContact(id,name)}> 
-              <MdDeleteOutline/>
-               </ButtonDel>
+      <ItemsContracts>               
+        {!isLoading && visibleContacts.map(({id, name, number}) =>(
+          <ItemContact key={id}>{name}: {number}
+          <ButtonDel onClick={() => onDeleteContact(id,name)}> 
+            <MdDeleteOutline/>
+            </ButtonDel>
             </ItemContact>
          ) )}
-        </ItemsContracts>
-        {isLoading && !error && <b>Request in progress...</b>}  
+      </ItemsContracts>
+      {isLoading && !error && <b>Request in progress...</b>}  
     </div>
 )}
 

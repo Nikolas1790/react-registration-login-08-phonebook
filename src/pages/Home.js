@@ -2,7 +2,6 @@ import { LogInHomePage } from "components/App.styled";
 
 const styles = {
     container: {
-      // minHeight: 'calc(100vh - 50px)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -20,7 +19,7 @@ const styles = {
     return (
       <div style={styles.container}>
         <h1 style={styles.title}>
-        Welcome to Phonebook
+          Welcome to Phonebook
         </h1>
         <div>
         <LogInHomePage to="/login" title="Try it now!">

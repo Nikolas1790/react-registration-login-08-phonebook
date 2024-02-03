@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 
 export const RegisterFormForm = styled.form`
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 300px;

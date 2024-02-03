@@ -15,31 +15,26 @@ export const contactList = createSlice({
         },
         [fetchContacts.rejected]: handleRejected,
 
-
-
         [addContact.pending]: handlePending,
-          [addContact.fulfilled](state, {payload}) {
-            handleFulfilledErrorLoading(state);
-            state.items.push(payload);
-          },
-          [addContact.rejected]: handleRejected,
-
-
+        [addContact.fulfilled](state, {payload}) {
+          handleFulfilledErrorLoading(state);
+          state.items.push(payload);
+        },
+        [addContact.rejected]: handleRejected,
           
-          [deleteContact.pending]: handlePending,
-          [deleteContact.fulfilled](state, action) {
-            handleFulfilledErrorLoading(state);
-            const index = state.items.findIndex(
-              task => task.id === action.payload.id
-            );
-            state.items.splice(index, 1);
-          },
-          [deleteContact.rejected]: handleRejected,
-          [logOut.fulfilled](state) {
-            state.items = [];
-            state.error = null;
-            state.isLoading = false;
-          },
-      },
-    
+        [deleteContact.pending]: handlePending,
+        [deleteContact.fulfilled](state, action) {
+          handleFulfilledErrorLoading(state);
+          const index = state.items.findIndex(
+            task => task.id === action.payload.id
+          );
+          state.items.splice(index, 1);
+         },
+       [deleteContact.rejected]: handleRejected,
+        [logOut.fulfilled](state) {
+          state.items = [];
+          state.error = null;
+          state.isLoading = false;
+        },
+      },    
 })
